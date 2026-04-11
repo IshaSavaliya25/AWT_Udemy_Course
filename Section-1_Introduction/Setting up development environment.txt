@@ -1,0 +1,122 @@
+Setting Up Node.js on Windows
+Visit the Node.js Official Website
+Open a web browser and go to nodejs.org.
+Choose the LTS version (recommended for stability) over Current.
+
+Download the Installer
+Click the LTS button to download the Windows installer (.msi file).
+Ensure the correct architecture (usually 64-bit; check if your system is 32-bit).
+
+Run the Installer
+Locate the .msi file (usually in Downloads) and double-click it.
+Follow the Node.js Setup Wizard and click Next.
+
+Accept the License Agreement
+Read the license, check I accept the terms, and click Next.
+
+Choose Installation Location
+Use the default path (e.g., C:\Program Files\nodejs\) and click Next.
+Optionally, select a custom location.
+
+Select Components
+Keep default components (Node.js runtime, npm, documentation) selected and click Next.
+Ensure Add to PATH is checked for command-line access.
+
+Install Node.js
+Click Install. Grant permission if prompted. Wait for completion.
+
+Complete the Installation
+Click Finish to exit the wizard.
+
+Verify the Installation
+Open Command Prompt (Win + R, type cmd, press Enter).
+Run: node -v (should show version, e.g., v18.17.1).
+Run: npm -v (should show version, e.g., 9.6.7).
+
+Test Node.js
+Create a file named test.js in Notepad with:
+
+console.log("Hello, Node.js!");
+                
+Save it (e.g., C:\Users\YourName\test.js).
+In Command Prompt, navigate to the folder (cd C:\Users\YourName).
+Run: node test.js. Output should be Hello, Node.js!.
+
+Setting Up Node.js on Linux (Ubuntu)
+Open the Terminal
+Press Ctrl + Alt + T to open the Terminal.
+
+Update Package Lists
+Run:
+
+sudo apt update
+                
+Enter your password if prompted.
+
+Install Curl
+Install curl (if not installed) with:
+
+sudo apt install curl
+                
+Add NodeSource Repository
+Use NodeSource for the latest LTS version. Run:
+
+curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+                
+Install Node.js and npm
+Install with:
+
+sudo apt install -y nodejs
+                
+Verify the Installation
+Check Node.js version: node -v (e.g., v18.17.1).
+Check npm version: npm -v (e.g., 9.6.7).
+
+Test Node.js
+Create test.js with:
+
+echo 'console.log("Hello, Node.js!");' > test.js
+                
+Run: node test.js. Output: Hello, Node.js!.
+
+Optional: Install a Text Editor
+Install Visual Studio Code:
+
+sudo snap install code --classic
+                
+Launch with code.
+
+Setting Up Node.js on macOS
+Visit the Node.js Official Website
+Go to nodejs.org and select LTS.
+
+Download the Installer
+Click LTS to download the macOS installer (.pkg file).
+
+Run the Installer
+Double-click the .pkg file (in Downloads) to launch the installer.
+
+Follow the Installation Wizard
+Click Continue, accept the license, and choose the default destination.
+Click Install and enter your admin password.
+
+Complete the Installation
+Click Close to finish.
+
+Open the Terminal
+Press Cmd + T or search for Terminal in Spotlight.
+
+Verify the Installation
+Run: node -v (e.g., v18.17.1).
+Run: npm -v (e.g., 9.6.7).
+
+Test Node.js
+Create test.js with:
+
+echo 'console.log("Hello, Node.js!");' > test.js
+                
+Run: node test.js. Output: Hello, Node.js!.
+
+Optional: Install a Text Editor
+Download Visual Studio Code from code.visualstudio.com.
+Move to Applications and open it.
